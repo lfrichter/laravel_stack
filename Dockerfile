@@ -1,6 +1,6 @@
 FROM php:7.4-fpm-alpine
 
-RUN apk add --no-cache openssl bash mysql-client
+RUN apk add --no-cache git openssl bash mysql-client
 RUN docker-php-ext-install pdo pdo_mysql
 
 ENV DOCKERIZE_VERSION v0.6.1
@@ -14,10 +14,6 @@ RUN rm -rf /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# RUN composer install && \
-#     cp .env.example .env && \
-#     php artisan key:generate && \
-#     php artisan config:cache
 
 RUN ln -s public html
 
