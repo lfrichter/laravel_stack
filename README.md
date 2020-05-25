@@ -40,7 +40,7 @@ A imagem de nosso projeto Go precisa ter menos de 2MB =)
 
 ### Resolução - Imagem Go 
 
-- [lfrichter/codeeducation](https://hub.docker.com/repository/docker/lfrichter/codeeducation)
+- [lfrichter/codeeducation](https://hub.docker.com/r/lfrichter/codeeducation)
 
 
 
